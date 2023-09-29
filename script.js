@@ -1,8 +1,11 @@
 //your JS code here. If required.
-let domItem = document.getElementById("browser-info");
+let inner = document.getElementById("browser-info");
 
+
+let str = "You are using"
+let app = " " + navigator.appName + " ";
+let av = navigator.appVersion;
 let agent = navigator.userAgent;
-let app = navigator.appName;
-let appVersion = navigator.appVersion;
+let ver = "version ";
 
-domItem.innerHTML = agent + app + appVersion; 
+inner.innerHTML = str + app + ver + av + agent;
